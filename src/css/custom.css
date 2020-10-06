@@ -1,0 +1,9 @@
+body {
+  background: var(--color-level-3);
+  color: var(--color-normal);
+  font-family: "Montserrat", sans-serif;
+}
+
+input {
+  outline: none;
+}
