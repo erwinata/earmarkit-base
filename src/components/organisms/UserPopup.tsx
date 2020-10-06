@@ -11,14 +11,14 @@ interface Props {
   closePopup: () => void;
 }
 
-interface ReduxState {
+interface GlobalState {
   user?: IUser;
 }
 
 const UserPopup: React.FC<Props> = (props) => {
   const history = useHistory();
 
-  const { user } = useSelector<ICombinedState, ReduxState>((state) => {
+  const { user } = useSelector<ICombinedState, GlobalState>((state) => {
     return {
       user: state.app.user,
     };
